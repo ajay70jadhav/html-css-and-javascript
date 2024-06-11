@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+.box {
+            height: 133px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+
+        }
+
+        .box1 {
+            background-color: aqua;
+        }
+
+        /*te tyachya position warun sarkun gela relative chya madadatine*/
+        .box2 {
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            background-color: azure;
+        }
+
+        .box3 {
+            position: fixed;
+            background-color: antiquewhite;
+            bottom: 0px;
+            left: 8vw;
+            height: 111px;
+        }
+
+        .box4 {
+            background-color: purple;
+        }
+
+        
+
+        .parent {
+            position: absolute;
+            padding: 43px;
+            margin: 34px;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <!--Note:- By default all boxes positioning is static -->
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+
+</body>
+
+</html>

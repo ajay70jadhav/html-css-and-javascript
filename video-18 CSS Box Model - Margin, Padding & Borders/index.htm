@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BoxModel</title>
+    <style>
+        .box {
+            background-color: aqua;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            color: red;
+            padding: 10px;
+            margin: 5px;
+            border: 5px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+
+        }
+
+        .box2 {
+            color: rgb(17, 0, 255);
+
+        }
+
+        img {
+            margin: 25px;
+            padding: 25px;
+            
+            border: 25px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        <h1>Web Dairy</h1>
+    </div>
+    <div class="box box2">
+        <h1>I am Box</h1>
+    </div>
+    <br>
+    <a target="_blank" href="https://www.w3schools.com/css/css_margin_collapse.asp"><h1>Margin Collapse</h1></a>
+    
+    <img src="1.png" alt="">
+</body>
+
+</html>

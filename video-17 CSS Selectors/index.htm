@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        div {
+            /*background-color: red;*/
+        }
+
+        /*class selector */
+        .red {
+            background-color: red;
+        }
+
+        /*id selector*/
+        #green {
+            background-color: green;
+        }
+
+        /*child selector*/
+        div>p {
+            background-color: yellow;
+
+        }
+
+        /*Descendant sellector*/
+        div p {
+            color: blue;
+        }
+        /*universal sellector*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*Pseudo sellector*/
+ 
+a:visited{
+    color: yellow;
+}
+a:hover{
+    background-color: red;
+}
+a:link{
+    color: green;
+}
+a:active{
+    background-color: rebeccapurple;
+}
+p:first-child{
+    background-color: aqua;
+}
+    </style>
+</head>
+
+
+<body>
+
+
+    <div class="red">
+
+        I am a div
+        <article>
+            <p>I am salman khan</p>
+        </article>
+    </div>
+    <div id="green">I am a another</div>
+
+<a href="https://www.google.com/">Go To Google </a>
+<a href="https://www.flipkart2.com/">Go To flipkart </a>
+
+
+
+
+
+    <h1>Some Types of sellectors</h1>
+    <div>
+        <ol>
+            <li>class selector</li>
+            <li>Id selector</li>
+            <li>child sellector</li>
+            <li>Ḍescendant sellector</li>
+            <li>universal sellector</li>
+            <li>pseudo sellector</li>
+        </ol>
+    </div>
+
+
+</body>
+
+</html>

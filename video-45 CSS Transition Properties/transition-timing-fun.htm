@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition-timing-fun</title>
+</head>
+<style>
+    .container {
+        border: 2px solid;
+        height: 500px;
+        width: 800px;
+    }
+
+    .box {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        transition: width 2s;
+        transition-timing-function: linear;
+    }
+
+    .box2 {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        transition: width 2s;
+        transition-timing-function: ease-in;
+    }
+    .box3 {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        transition: width 2s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .box:hover {
+        width: 300px;
+    }
+
+    .box2:hover {
+
+        width: 300px;
+    }
+    .box3:hover {
+
+        width: 300px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>linear</h2>
+        </div>
+        <div class="box2">
+            <h2>ease-in</h2>
+        </div>
+        <div class="box3">
+            <h2>ease-in-out</h2>
+        </div>
+
+<h3>and many more....</h3>
+    </div>
+
+</body>
+
+</html>

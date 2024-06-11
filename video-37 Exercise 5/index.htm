@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-5 Design Layout</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+
+        }
+body{
+    position: absolute;
+}
+header{
+    position: sticky;
+    top: 0px;
+}
+        nav {
+           
+            background-color: chocolate;
+            height: 50px;
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav li {
+            padding: 15px;
+        }
+        
+
+        main {
+            justify-content: center;
+
+        }
+
+        .container {
+            margin: 40px;
+            margin-top: 15px;
+            display: flex;
+            background-color: rgb(60, 111, 47);
+            height: 500px;
+            width: 95vw;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1 {
+            margin: 50px;
+            height: 400px;
+            width: 400px;
+            background-color: #62cbd3;
+        }
+
+        .box2 {
+            margin: 50px;
+            height: 400px;
+            width: 400px;
+            background-color: #62cbd3;
+        }
+
+        .para {
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: 40px;
+            text-align: center;
+
+        }
+
+        h2{
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+        .logo{
+            position: fixed;
+            bottom: 1vw;
+            right: 1vw;
+            background-color: #edb21c;
+            height: 50px;
+            width: 50px;
+            border-radius: 40px;
+           font-size: 20px;
+        }
+        .bottom{
+            height: 50px;
+            background-color: #d34e4e;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact</li>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+        <div class="para">
+            
+            <h2>Welcome to this Sigma Web Development Express</h2>
+        </div>
+        <div class="para">
+            
+            <h2>Welcome to this Sigma Web Development Express</h2>
+        </div>
+        <div class="para">
+            
+            <h2>Welcome to this Sigma Web Development Express</h2>
+        </div>
+        <div class="logo">
+            <h1>AJ</h1>
+        </div>
+    </main>
+    <footer>
+<div class="bottom">
+
+</div>
+    </footer>
+
+</body>
+
+</html>

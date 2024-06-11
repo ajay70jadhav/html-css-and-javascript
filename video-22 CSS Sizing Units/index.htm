@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: aquamarine;
+            width: 100px;
+            margin: auto;
+            font-size: 20px;
+        }
+
+        /*vh,vw= here is we use viewport height because
+        "viewport cha wapar user chya device nusar website madhe size adjust karnya sathi kela jato"
+        vh== (viewport height) because of this 
+        jar viewport chya hisabani ekhyadya element hci height set karayachi asan tar viewport height cha wapar hoto(vh)
+        vw== (viewport width) same as vh*/
+
+
+
+        .container {
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: aquamarine;
+            width: 100vmin;
+            height: 80vmax;
+            
+            margin: 23px auto;
+        }
+        .container p{
+            font-size: 1.5em;
+            width: 50%;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">this is a box</div>
+    <br>
+
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt saepe illo libero officiis ad accusantium
+            praesentium tenetur veniam ipsam temporibus repudiandae nam, consequuntur facere recusandae quam dolor
+            perspiciatis, est sequi vel accusamus similique animi? Fugit amet cum neque beatae voluptas? Veniam eveniet,
+            sunt provident, nisi, libero id explicabo soluta illum blanditiis consectetur autem aspernatur quis beatae!
+        </p>
+    </div>
+
+
+</body>
+
+</html>

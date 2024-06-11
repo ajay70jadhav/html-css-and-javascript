@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Property </title>
+    <style>
+h4{
+    height: 25px;
+    padding: 25;
+    margin: 25px;
+}
+        h4.over{
+            padding: 25px;
+           
+        }
+        h4.normal{
+            padding: 25px;
+            margin: 25px;
+           
+        }
+        .box {
+            height: 200px;
+            width: 200px;
+            padding: 25px;
+            border: solid 2px;
+            box-shadow: 2px 2px 2px color(0 0 0 0.2), 0px 4px 8px color(0 0 0 0.19);
+            background-color: aquamarine;
+        }
+        .box1 {
+            height: 200px;
+            width: 200px;
+            padding: 25px;
+            border: solid 2px;
+            box-shadow: 2px 2px 2px color(0 0 0 0.2), 0px 4px 8px color(0 0 0 0.19);
+            background-color: aquamarine;
+        }
+        .box2 {
+            overflow: visible;
+            padding: 25px;
+            height: 200px;
+            width: 200px;
+            border: solid 2px;
+            box-shadow: 2px 2px 2px color(0 0 0 0.2), 0px 4px 8px color(0 0 0 0.19);
+            background-color: aquamarine;
+        }
+        .box3 {
+            overflow: hidden;
+            height: 200px;
+            padding: 25px;
+            width: 200px;
+            border: solid 2px;
+            box-shadow: 2px 2px 2px color(0 0 0 0.2), 0px 4px 8px color(0 0 0 0.19);
+            background-color: aquamarine;
+        }
+        .box4{
+            overflow: scroll;
+            height: 200px;
+            padding: 25px;
+            width: 200px;
+            border: solid 2px;
+            box-shadow: 2px 2px 2px color(0 0 0 0.2), 0px 4px 8px color(0 0 0 0.19);
+            background-color: aquamarine;
+        }
+        .box5{
+            overflow: auto;
+            height: 200px;
+            padding: 25px;
+            width: 200px;
+            border: solid 2px;
+            box-shadow: 2px 2px 2px color(0 0 0 0.2), 0px 4px 8px color(0 0 0 0.19);
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Overflow Property</h1>
+    <ol>
+    <li ><h4 class="normal">Normal Box:</h4></li>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cupiditate dolores recusandae
+        repudiandae similique et minus ducimus, tempore quidem sunt assumenda laudantium nesciunt!</div>
+
+
+
+   <li> <h4 class="over">overflow Box:</h4></li>
+    <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cupiditate dolores recusandae
+        repudiandae similique et minus ducimus, tempore quidem sunt assumenda laudantium nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam numquam voluptatem quod ipsa ex omnis repellat quo, repudiandae magni, officia voluptatibus labore quaerat?</div>
+    </ol>
+<br>
+<br>
+<h1>Here are some properties of overflow values</h1>
+<ol>
+    <li><h4>visible:</h4></li>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cupiditate dolores recusandae
+        repudiandae similique et minus ducimus, tempore quidem sunt assumenda laudantium nesciunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas laborum, fugit expedita pariatur illo voluptates esse maxime accusantium sit animi? Quaerat soluta.</div>
+
+
+
+    <li><h4>hidden:</h4></li>
+    <div class="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cupiditate dolores recusandae
+        repudiandae similique et minus ducimus, tempore quidem sunt assumenda laudantium nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, obcaecati quisquam libero nisi earum neque culpa iure ab corrupti impedit, numquam officia harum officiis provident rerum cum aliquam tenetur blanditiis!</div>
+
+
+    <li><h4>scroll:</h4></li>
+    <div class="box4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cupiditate dolores recusandae
+        repudiandae similique et minus ducimus, tempore quidem sunt assumenda laudantium nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, obcaecati quisquam libero nisi earum neque culpa iure ab corrupti impedit, numquam officia harum officiis provident rerum cum aliquam tenetur blanditiis!</div>
+    
+
+
+    <li><h4>Auto:- 1.when text big</h4></li>
+    <div class="box5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cupiditate dolores recusandae
+        repudiandae similique et minus ducimus, tempore quidem sunt assumenda laudantium nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, obcaecati quisquam libero nisi earum neque culpa iure ab corrupti impedit, numquam officia harum officiis provident rerum cum aliquam tenetur blanditiis!</div>
+    <li><h4>Auto:- 2.when text can fit within the box</h4></li>
+    <div class="box5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cupiditate dolores recusandae
+        repudiandae similique et minus ducimus, tempore quidem sunt assumenda laudantium nesciunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+    </ol>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            border: 2px solid blue;
+            display:none;
+            
+            width: 344px;
+            padding: 45px;
+            margin: 34px;
+
+        }
+
+        div {
+            border: 2px solid blue;
+            display: inline-block;
+            width: 344px;
+            padding: 45px;
+            margin: 34px;
+        }
+        .box2 {
+            border: 2px solid blue;
+            display: inline-block;
+            visibility: hidden;
+            width: 344px;
+            padding: 45px;
+            margin: 34px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>1.Display none property mule element box pan gayab zala aani space pan cut zali
+<br>
+2.Visibility:hidden; mule box tar gayab zala pan tyachi space cut nahi zali
+
+    </p>
+    <div class="box1">I am a first Box</div>
+    <div class="box2">and i am second box</div>
+    <div class="box">and also a nice box</div>
+    <!-- this is inline inline element because of that they both span element content is occur in side by side  -->
+    <span>I am a good</span>
+    <span>boy</span>
+</body>
+
+</html>

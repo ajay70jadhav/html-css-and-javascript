@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:first-child {
+            background-color: red;
+        }
+
+        .box::first-line {
+            color: yellow;
+        }
+
+        .boxes * {
+            border: 2px solid black;
+        }
+
+        /*attribute selector
+
+[data-color="primary"]{
+    background-color: rgba(17, 155, 177, 0.795);
+    margin-top: 45px;
+    border: 2px solid black;
+    padding-top: 45px;
+}
+*/
+
+
+        /*Grouping of selectors
+
+p, .box, [data-color="primary"]{
+    background-color: rgba(17, 155, 177, 0.795);
+    margin-top: 45px;
+    border: 2px solid black;
+    padding-top: 45px;
+}*/
+
+
+        /* nth-child selector
+
+.box:nth-child(odd){
+    background-color: blue;
+}
+*/
+        /* Pseudo Elements
+           1.before
+           2.after*/
+
+        /* it means before boxes class insert the "harry is good" element and whatever you use in .boxes class it will always print before .boxes class */
+        .boxes::before {
+            content: "harry is good";
+            color: red;
+        }
+
+        /* it means after boxes class insert the "sigma courses are also good" element and whatever you use in .boxes class it will always print after .boxes class */
+        .boxes::after {
+            content: "sigma courses are also good";
+            color: blue;
+        }
+
+        /*when you select the any line of text then the color of selected part will aqua and background will black */
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-color="primary" class="boxes">
+        <div class="box">I am First Box</div>
+        <div class="box">Hey I am Box</div>
+        <div class="box">Hey I am Box</div>
+        <div class="box">Hey I am Box</div>
+        <div class="box">Hey I am Box</div>
+        <div class="box">Hey I am Box</div>
+    </div>
+</body>
+
+</html>
